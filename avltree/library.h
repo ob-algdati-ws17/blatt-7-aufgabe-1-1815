@@ -17,7 +17,7 @@ private:
 
         ///balance and key of the node
         int balance = 0;
-        const int key;
+        int key;
 
         ///previous node, left and right child
         Node *left = nullptr;
@@ -25,18 +25,20 @@ private:
         Node *previous = nullptr;
 
 
-        void upin();
+        void upin(AvlTree *);
 
         ///basic operations
         bool search(const int) const;
-        void insert(const int);
+        void insert(const int, AvlTree *);
         Node *remove(const int);
+        Node *getNode(const int);
 
-        //rotations
-        Node* rotateLeft();
-        Node* rotateRight();
-        Node* rotateLeftRight();
-        Node* rotateRightLeft();
+        ///rotations
+        Node* rotateLeft(AvlTree *);
+        Node* rotateRight(AvlTree *);
+        Node* rotateLeftRight(AvlTree *);
+        Node* rotateRightLeft(AvlTree *);
+
     };
 
 
@@ -54,7 +56,11 @@ public:
 
     void remove(const int);
 
+    void generatePic();
 
+    void generatePic(const int);
+
+    Node *getNode(const int);
 
     friend ostream &operator<<(ostream &, const AvlTree &);
 
