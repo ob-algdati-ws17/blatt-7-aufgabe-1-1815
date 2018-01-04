@@ -1,0 +1,2 @@
+C:\MinGW\bin\ar.exe qc libblatt_7_aufgabe_1_1815d.a  CMakeFiles/blatt_7_aufgabe_1_1815.dir/avltree/library.cpp.obj CMakeFiles/blatt_7_aufgabe_1_1815.dir/test/testAvltree.cpp.obj
+C:\MinGW\bin\ranlib.exe libblatt_7_aufgabe_1_1815d.a

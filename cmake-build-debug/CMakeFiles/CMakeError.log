@@ -1,0 +1,795 @@
+The CXX compiler identification could not be found in "C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/a.exe"
+
+Detecting CXX compiler ABI info failed to compile with the following output:
+Change Dir: C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_70f53/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_70f53.dir\build.make CMakeFiles/cmTC_70f53.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_70f53.dir/CMakeCXXCompilerABI.cpp.obj
+C:\MinGW\bin\g++.exe     -o CMakeFiles\cmTC_70f53.dir\CMakeCXXCompilerABI.cpp.obj -c "C:\Program Files\JetBrains\CLion 2017.2.3\bin\cmake\share\cmake-3.8\Modules\CMakeCXXCompilerABI.cpp"
+Linking CXX executable cmTC_70f53.exe
+"C:\Program Files\JetBrains\CLion 2017.2.3\bin\cmake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_70f53.dir\link.txt --verbose=1
+"C:\Program Files\JetBrains\CLion 2017.2.3\bin\cmake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_70f53.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\cmTC_70f53.dir/objects.a @CMakeFiles\cmTC_70f53.dir\objects1.rsp
+C:\MinGW\bin\g++.exe     -v -Wl,--whole-archive CMakeFiles\cmTC_70f53.dir/objects.a -Wl,--no-whole-archive  -o cmTC_70f53.exe -Wl,--out-implib,libcmTC_70f53.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
+Using built-in specs.
+COLLECT_GCC=C:\MinGW\bin\g++.exe
+COLLECT_LTO_WRAPPER=c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/lto-wrapper.exe
+Target: mingw32
+Configured with: ../src/gcc-6.3.0/configure --build=x86_64-pc-linux-gnu --host=mingw32 --with-gmp=/mingw --with-mpfr=/mingw --with-mpc=/mingw --with-isl=/mingw --prefix=/mingw --disable-win32-registry --target=mingw32 --with-arch=i586 --enable-languages=c,c++,objc,obj-c++,fortran,ada --with-pkgversion='MinGW.org GCC-6.3.0-1' --enable-static --enable-shared --enable-threads --with-dwarf2 --disable-sjlj-exceptions --enable-version-specific-runtime-libs --with-libiconv-prefix=/mingw --with-libintl-prefix=/mingw --enable-libstdcxx-debug --with-tune=generic --enable-libgomp --disable-libvtv --enable-nls
+Thread model: win32
+gcc version 6.3.0 (MinGW.org GCC-6.3.0-1) 
+COMPILER_PATH=c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/;c:/mingw/bin/../libexec/gcc/;c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/
+LIBRARY_PATH=c:/mingw/bin/../lib/gcc/mingw32/6.3.0/;c:/mingw/bin/../lib/gcc/;c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/lib/;c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_70f53.exe' '-shared-libgcc' '-mtune=generic' '-march=i586'
+ c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/collect2.exe -plugin c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/liblto_plugin-0.dll -plugin-opt=c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\S0ras\AppData\Local\Temp\cc3Fu5ji.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -Bdynamic -u ___register_frame_info -u ___deregister_frame_info -o cmTC_70f53.exe c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../crt2.o c:/mingw/bin/../lib/gcc/mingw32/6.3.0/crtbegin.o -Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0 -Lc:/mingw/bin/../lib/gcc -Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/lib -Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../.. --whole-archive CMakeFiles\cmTC_70f53.dir/objects.a --no-whole-archive --out-implib libcmTC_70f53.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt c:/mingw/bin/../lib/gcc/mingw32/6.3.0/crtend.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_70f53.exe' '-shared-libgcc' '-mtune=generic' '-march=i586'
+mingw32-make.exe[1]: Leaving directory 'C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+Cannot copy output executable
+  'C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp/cmTC_70f53.exe'
+to destination specified by COPY_FILE:
+  'C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/3.8.2/CMakeDetermineCompilerABI_CXX.bin'
+
+
+Determining if the include file pthread.h exists failed with the following output:
+Change Dir: C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_b852b/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_b852b.dir\build.make CMakeFiles/cmTC_b852b.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b852b.dir/CheckIncludeFile.c.obj
+C:\MinGW\bin\gcc.exe    -o CMakeFiles\cmTC_b852b.dir\CheckIncludeFile.c.obj   -c C:\Users\S0ras\CLionProjects\blatt-7-aufgabe-1-1815\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+C:\Users\S0ras\CLionProjects\blatt-7-aufgabe-1-1815\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c:1:21: fatal error: pthread.h: No such file or directory
+ #include <pthread.h>
+                     ^
+compilation terminated.
+CMakeFiles\cmTC_b852b.dir\build.make:64: recipe for target 'CMakeFiles/cmTC_b852b.dir/CheckIncludeFile.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_b852b.dir/CheckIncludeFile.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:125: recipe for target 'cmTC_b852b/fast' failed
+mingw32-make.exe: *** [cmTC_b852b/fast] Error 2
+
+
+Determining if the include file pthread.h exists failed with the following output:
+Change Dir: C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_3972d/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_3972d.dir\build.make CMakeFiles/cmTC_3972d.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3972d.dir/CheckIncludeFile.c.obj
+C:\MinGW\bin\gcc.exe    -o CMakeFiles\cmTC_3972d.dir\CheckIncludeFile.c.obj   -c C:\Users\S0ras\CLionProjects\blatt-7-aufgabe-1-1815\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+C:\Users\S0ras\CLionProjects\blatt-7-aufgabe-1-1815\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c:1:21: fatal error: pthread.h: No such file or directory
+ #include <pthread.h>
+                     ^
+compilation terminated.
+CMakeFiles\cmTC_3972d.dir\build.make:64: recipe for target 'CMakeFiles/cmTC_3972d.dir/CheckIncludeFile.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_3972d.dir/CheckIncludeFile.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:125: recipe for target 'cmTC_3972d/fast' failed
+mingw32-make.exe: *** [cmTC_3972d/fast] Error 2
+
+
+Determining if the include file pthread.h exists failed with the following output:
+Change Dir: C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_67140/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_67140.dir\build.make CMakeFiles/cmTC_67140.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_67140.dir/CheckIncludeFile.c.obj
+C:\MinGW\bin\gcc.exe    -o CMakeFiles\cmTC_67140.dir\CheckIncludeFile.c.obj   -c C:\Users\S0ras\CLionProjects\blatt-7-aufgabe-1-1815\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+C:\Users\S0ras\CLionProjects\blatt-7-aufgabe-1-1815\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c:1:21: fatal error: pthread.h: No such file or directory
+ #include <pthread.h>
+                     ^
+compilation terminated.
+CMakeFiles\cmTC_67140.dir\build.make:64: recipe for target 'CMakeFiles/cmTC_67140.dir/CheckIncludeFile.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_67140.dir/CheckIncludeFile.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:125: recipe for target 'cmTC_67140/fast' failed
+mingw32-make.exe: *** [cmTC_67140/fast] Error 2
+
+
+Determining if the include file pthread.h exists failed with the following output:
+Change Dir: C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_ea760/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_ea760.dir\build.make CMakeFiles/cmTC_ea760.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ea760.dir/CheckIncludeFile.c.obj
+C:\MinGW\bin\gcc.exe    -o CMakeFiles\cmTC_ea760.dir\CheckIncludeFile.c.obj   -c C:\Users\S0ras\CLionProjects\blatt-7-aufgabe-1-1815\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+C:\Users\S0ras\CLionProjects\blatt-7-aufgabe-1-1815\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c:1:21: fatal error: pthread.h: No such file or directory
+ #include <pthread.h>
+                     ^
+compilation terminated.
+CMakeFiles\cmTC_ea760.dir\build.make:64: recipe for target 'CMakeFiles/cmTC_ea760.dir/CheckIncludeFile.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_ea760.dir/CheckIncludeFile.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:125: recipe for target 'cmTC_ea760/fast' failed
+mingw32-make.exe: *** [cmTC_ea760/fast] Error 2
+
+
+Determining if the include file pthread.h exists failed with the following output:
+Change Dir: C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_380ea/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_380ea.dir\build.make CMakeFiles/cmTC_380ea.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_380ea.dir/CheckIncludeFile.c.obj
+C:\MinGW\bin\gcc.exe    -o CMakeFiles\cmTC_380ea.dir\CheckIncludeFile.c.obj   -c C:\Users\S0ras\CLionProjects\blatt-7-aufgabe-1-1815\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+C:\Users\S0ras\CLionProjects\blatt-7-aufgabe-1-1815\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c:1:21: fatal error: pthread.h: No such file or directory
+ #include <pthread.h>
+                     ^
+compilation terminated.
+CMakeFiles\cmTC_380ea.dir\build.make:64: recipe for target 'CMakeFiles/cmTC_380ea.dir/CheckIncludeFile.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_380ea.dir/CheckIncludeFile.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:125: recipe for target 'cmTC_380ea/fast' failed
+mingw32-make.exe: *** [cmTC_380ea/fast] Error 2
+
+
+Determining if the include file pthread.h exists failed with the following output:
+Change Dir: C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_0576e/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_0576e.dir\build.make CMakeFiles/cmTC_0576e.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0576e.dir/CheckIncludeFile.c.obj
+C:\MinGW\bin\gcc.exe    -o CMakeFiles\cmTC_0576e.dir\CheckIncludeFile.c.obj   -c C:\Users\S0ras\CLionProjects\blatt-7-aufgabe-1-1815\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+C:\Users\S0ras\CLionProjects\blatt-7-aufgabe-1-1815\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c:1:21: fatal error: pthread.h: No such file or directory
+ #include <pthread.h>
+                     ^
+compilation terminated.
+CMakeFiles\cmTC_0576e.dir\build.make:64: recipe for target 'CMakeFiles/cmTC_0576e.dir/CheckIncludeFile.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_0576e.dir/CheckIncludeFile.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:125: recipe for target 'cmTC_0576e/fast' failed
+mingw32-make.exe: *** [cmTC_0576e/fast] Error 2
+
+
+Determining if the include file pthread.h exists failed with the following output:
+Change Dir: C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_4e8e1/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_4e8e1.dir\build.make CMakeFiles/cmTC_4e8e1.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4e8e1.dir/CheckIncludeFile.c.obj
+C:\MinGW\bin\gcc.exe    -o CMakeFiles\cmTC_4e8e1.dir\CheckIncludeFile.c.obj   -c C:\Users\S0ras\CLionProjects\blatt-7-aufgabe-1-1815\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+C:\Users\S0ras\CLionProjects\blatt-7-aufgabe-1-1815\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c:1:21: fatal error: pthread.h: No such file or directory
+ #include <pthread.h>
+                     ^
+compilation terminated.
+CMakeFiles\cmTC_4e8e1.dir\build.make:64: recipe for target 'CMakeFiles/cmTC_4e8e1.dir/CheckIncludeFile.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_4e8e1.dir/CheckIncludeFile.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:125: recipe for target 'cmTC_4e8e1/fast' failed
+mingw32-make.exe: *** [cmTC_4e8e1/fast] Error 2
+
+
+Determining if the include file pthread.h exists failed with the following output:
+Change Dir: C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_a766a/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_a766a.dir\build.make CMakeFiles/cmTC_a766a.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a766a.dir/CheckIncludeFile.c.obj
+C:\MinGW\bin\gcc.exe    -o CMakeFiles\cmTC_a766a.dir\CheckIncludeFile.c.obj   -c C:\Users\S0ras\CLionProjects\blatt-7-aufgabe-1-1815\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+C:\Users\S0ras\CLionProjects\blatt-7-aufgabe-1-1815\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c:1:21: fatal error: pthread.h: No such file or directory
+ #include <pthread.h>
+                     ^
+compilation terminated.
+CMakeFiles\cmTC_a766a.dir\build.make:64: recipe for target 'CMakeFiles/cmTC_a766a.dir/CheckIncludeFile.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_a766a.dir/CheckIncludeFile.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:125: recipe for target 'cmTC_a766a/fast' failed
+mingw32-make.exe: *** [cmTC_a766a/fast] Error 2
+
+
+Determining if the include file pthread.h exists failed with the following output:
+Change Dir: C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_774fa/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_774fa.dir\build.make CMakeFiles/cmTC_774fa.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_774fa.dir/CheckIncludeFile.c.obj
+C:\MinGW\bin\gcc.exe    -o CMakeFiles\cmTC_774fa.dir\CheckIncludeFile.c.obj   -c C:\Users\S0ras\CLionProjects\blatt-7-aufgabe-1-1815\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+C:\Users\S0ras\CLionProjects\blatt-7-aufgabe-1-1815\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c:1:21: fatal error: pthread.h: No such file or directory
+ #include <pthread.h>
+                     ^
+compilation terminated.
+CMakeFiles\cmTC_774fa.dir\build.make:64: recipe for target 'CMakeFiles/cmTC_774fa.dir/CheckIncludeFile.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_774fa.dir/CheckIncludeFile.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:125: recipe for target 'cmTC_774fa/fast' failed
+mingw32-make.exe: *** [cmTC_774fa/fast] Error 2
+
+
+Determining if the include file pthread.h exists failed with the following output:
+Change Dir: C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_72c81/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_72c81.dir\build.make CMakeFiles/cmTC_72c81.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_72c81.dir/CheckIncludeFile.c.obj
+C:\MinGW\bin\gcc.exe    -o CMakeFiles\cmTC_72c81.dir\CheckIncludeFile.c.obj   -c C:\Users\S0ras\CLionProjects\blatt-7-aufgabe-1-1815\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+C:\Users\S0ras\CLionProjects\blatt-7-aufgabe-1-1815\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c:1:21: fatal error: pthread.h: No such file or directory
+ #include <pthread.h>
+                     ^
+compilation terminated.
+CMakeFiles\cmTC_72c81.dir\build.make:64: recipe for target 'CMakeFiles/cmTC_72c81.dir/CheckIncludeFile.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_72c81.dir/CheckIncludeFile.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:125: recipe for target 'cmTC_72c81/fast' failed
+mingw32-make.exe: *** [cmTC_72c81/fast] Error 2
+
+
+Determining if the include file pthread.h exists failed with the following output:
+Change Dir: C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_18327/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_18327.dir\build.make CMakeFiles/cmTC_18327.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_18327.dir/CheckIncludeFile.c.obj
+C:\MinGW\bin\gcc.exe    -o CMakeFiles\cmTC_18327.dir\CheckIncludeFile.c.obj   -c C:\Users\S0ras\CLionProjects\blatt-7-aufgabe-1-1815\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+C:\Users\S0ras\CLionProjects\blatt-7-aufgabe-1-1815\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c:1:21: fatal error: pthread.h: No such file or directory
+ #include <pthread.h>
+                     ^
+compilation terminated.
+CMakeFiles\cmTC_18327.dir\build.make:64: recipe for target 'CMakeFiles/cmTC_18327.dir/CheckIncludeFile.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_18327.dir/CheckIncludeFile.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:125: recipe for target 'cmTC_18327/fast' failed
+mingw32-make.exe: *** [cmTC_18327/fast] Error 2
+
+
+Determining if the include file pthread.h exists failed with the following output:
+Change Dir: C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_21f94/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_21f94.dir\build.make CMakeFiles/cmTC_21f94.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_21f94.dir/CheckIncludeFile.c.obj
+C:\MinGW\bin\gcc.exe    -o CMakeFiles\cmTC_21f94.dir\CheckIncludeFile.c.obj   -c C:\Users\S0ras\CLionProjects\blatt-7-aufgabe-1-1815\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+C:\Users\S0ras\CLionProjects\blatt-7-aufgabe-1-1815\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c:1:21: fatal error: pthread.h: No such file or directory
+ #include <pthread.h>
+                     ^
+compilation terminated.
+CMakeFiles\cmTC_21f94.dir\build.make:64: recipe for target 'CMakeFiles/cmTC_21f94.dir/CheckIncludeFile.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_21f94.dir/CheckIncludeFile.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:125: recipe for target 'cmTC_21f94/fast' failed
+mingw32-make.exe: *** [cmTC_21f94/fast] Error 2
+
+
+Determining if the include file pthread.h exists failed with the following output:
+Change Dir: C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_54e8b/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_54e8b.dir\build.make CMakeFiles/cmTC_54e8b.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_54e8b.dir/CheckIncludeFile.c.obj
+C:\MinGW\bin\gcc.exe    -o CMakeFiles\cmTC_54e8b.dir\CheckIncludeFile.c.obj   -c C:\Users\S0ras\CLionProjects\blatt-7-aufgabe-1-1815\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+C:\Users\S0ras\CLionProjects\blatt-7-aufgabe-1-1815\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c:1:21: fatal error: pthread.h: No such file or directory
+ #include <pthread.h>
+                     ^
+compilation terminated.
+CMakeFiles\cmTC_54e8b.dir\build.make:64: recipe for target 'CMakeFiles/cmTC_54e8b.dir/CheckIncludeFile.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_54e8b.dir/CheckIncludeFile.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:125: recipe for target 'cmTC_54e8b/fast' failed
+mingw32-make.exe: *** [cmTC_54e8b/fast] Error 2
+
+
+Determining if the include file pthread.h exists failed with the following output:
+Change Dir: C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_216b1/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_216b1.dir\build.make CMakeFiles/cmTC_216b1.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_216b1.dir/CheckIncludeFile.c.obj
+C:\MinGW\bin\gcc.exe    -o CMakeFiles\cmTC_216b1.dir\CheckIncludeFile.c.obj   -c C:\Users\S0ras\CLionProjects\blatt-7-aufgabe-1-1815\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+C:\Users\S0ras\CLionProjects\blatt-7-aufgabe-1-1815\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c:1:21: fatal error: pthread.h: No such file or directory
+ #include <pthread.h>
+                     ^
+compilation terminated.
+CMakeFiles\cmTC_216b1.dir\build.make:64: recipe for target 'CMakeFiles/cmTC_216b1.dir/CheckIncludeFile.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_216b1.dir/CheckIncludeFile.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:125: recipe for target 'cmTC_216b1/fast' failed
+mingw32-make.exe: *** [cmTC_216b1/fast] Error 2
+
+
+Determining if the include file pthread.h exists failed with the following output:
+Change Dir: C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_571bc/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_571bc.dir\build.make CMakeFiles/cmTC_571bc.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_571bc.dir/CheckIncludeFile.c.obj
+C:\MinGW\bin\gcc.exe    -o CMakeFiles\cmTC_571bc.dir\CheckIncludeFile.c.obj   -c C:\Users\S0ras\CLionProjects\blatt-7-aufgabe-1-1815\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+C:\Users\S0ras\CLionProjects\blatt-7-aufgabe-1-1815\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c:1:21: fatal error: pthread.h: No such file or directory
+ #include <pthread.h>
+                     ^
+compilation terminated.
+CMakeFiles\cmTC_571bc.dir\build.make:64: recipe for target 'CMakeFiles/cmTC_571bc.dir/CheckIncludeFile.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_571bc.dir/CheckIncludeFile.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:125: recipe for target 'cmTC_571bc/fast' failed
+mingw32-make.exe: *** [cmTC_571bc/fast] Error 2
+
+
+Determining if the include file pthread.h exists failed with the following output:
+Change Dir: C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_11c98/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_11c98.dir\build.make CMakeFiles/cmTC_11c98.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_11c98.dir/CheckIncludeFile.c.obj
+C:\MinGW\bin\gcc.exe    -o CMakeFiles\cmTC_11c98.dir\CheckIncludeFile.c.obj   -c C:\Users\S0ras\CLionProjects\blatt-7-aufgabe-1-1815\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+C:\Users\S0ras\CLionProjects\blatt-7-aufgabe-1-1815\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c:1:21: fatal error: pthread.h: No such file or directory
+ #include <pthread.h>
+                     ^
+compilation terminated.
+CMakeFiles\cmTC_11c98.dir\build.make:64: recipe for target 'CMakeFiles/cmTC_11c98.dir/CheckIncludeFile.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_11c98.dir/CheckIncludeFile.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:125: recipe for target 'cmTC_11c98/fast' failed
+mingw32-make.exe: *** [cmTC_11c98/fast] Error 2
+
+
+Determining if the include file pthread.h exists failed with the following output:
+Change Dir: C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_d7fe5/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_d7fe5.dir\build.make CMakeFiles/cmTC_d7fe5.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d7fe5.dir/CheckIncludeFile.c.obj
+C:\MinGW\bin\gcc.exe    -o CMakeFiles\cmTC_d7fe5.dir\CheckIncludeFile.c.obj   -c C:\Users\S0ras\CLionProjects\blatt-7-aufgabe-1-1815\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+C:\Users\S0ras\CLionProjects\blatt-7-aufgabe-1-1815\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c:1:21: fatal error: pthread.h: No such file or directory
+ #include <pthread.h>
+                     ^
+compilation terminated.
+CMakeFiles\cmTC_d7fe5.dir\build.make:64: recipe for target 'CMakeFiles/cmTC_d7fe5.dir/CheckIncludeFile.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_d7fe5.dir/CheckIncludeFile.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:125: recipe for target 'cmTC_d7fe5/fast' failed
+mingw32-make.exe: *** [cmTC_d7fe5/fast] Error 2
+
+
+Determining if the include file pthread.h exists failed with the following output:
+Change Dir: C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_d9cbc/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_d9cbc.dir\build.make CMakeFiles/cmTC_d9cbc.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d9cbc.dir/CheckIncludeFile.c.obj
+C:\MinGW\bin\gcc.exe    -o CMakeFiles\cmTC_d9cbc.dir\CheckIncludeFile.c.obj   -c C:\Users\S0ras\CLionProjects\blatt-7-aufgabe-1-1815\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+C:\Users\S0ras\CLionProjects\blatt-7-aufgabe-1-1815\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c:1:21: fatal error: pthread.h: No such file or directory
+ #include <pthread.h>
+                     ^
+compilation terminated.
+CMakeFiles\cmTC_d9cbc.dir\build.make:64: recipe for target 'CMakeFiles/cmTC_d9cbc.dir/CheckIncludeFile.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_d9cbc.dir/CheckIncludeFile.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:125: recipe for target 'cmTC_d9cbc/fast' failed
+mingw32-make.exe: *** [cmTC_d9cbc/fast] Error 2
+
+
+Determining if the include file pthread.h exists failed with the following output:
+Change Dir: C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_460ce/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_460ce.dir\build.make CMakeFiles/cmTC_460ce.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_460ce.dir/CheckIncludeFile.c.obj
+C:\MinGW\bin\gcc.exe    -o CMakeFiles\cmTC_460ce.dir\CheckIncludeFile.c.obj   -c C:\Users\S0ras\CLionProjects\blatt-7-aufgabe-1-1815\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+C:\Users\S0ras\CLionProjects\blatt-7-aufgabe-1-1815\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c:1:21: fatal error: pthread.h: No such file or directory
+ #include <pthread.h>
+                     ^
+compilation terminated.
+CMakeFiles\cmTC_460ce.dir\build.make:64: recipe for target 'CMakeFiles/cmTC_460ce.dir/CheckIncludeFile.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_460ce.dir/CheckIncludeFile.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:125: recipe for target 'cmTC_460ce/fast' failed
+mingw32-make.exe: *** [cmTC_460ce/fast] Error 2
+
+
+Determining if the include file pthread.h exists failed with the following output:
+Change Dir: C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_f06d7/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_f06d7.dir\build.make CMakeFiles/cmTC_f06d7.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f06d7.dir/CheckIncludeFile.c.obj
+C:\MinGW\bin\gcc.exe    -o CMakeFiles\cmTC_f06d7.dir\CheckIncludeFile.c.obj   -c C:\Users\S0ras\CLionProjects\blatt-7-aufgabe-1-1815\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+C:\Users\S0ras\CLionProjects\blatt-7-aufgabe-1-1815\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c:1:21: fatal error: pthread.h: No such file or directory
+ #include <pthread.h>
+                     ^
+compilation terminated.
+CMakeFiles\cmTC_f06d7.dir\build.make:64: recipe for target 'CMakeFiles/cmTC_f06d7.dir/CheckIncludeFile.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_f06d7.dir/CheckIncludeFile.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:125: recipe for target 'cmTC_f06d7/fast' failed
+mingw32-make.exe: *** [cmTC_f06d7/fast] Error 2
+
+
+Determining if the include file pthread.h exists failed with the following output:
+Change Dir: C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_71686/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_71686.dir\build.make CMakeFiles/cmTC_71686.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_71686.dir/CheckIncludeFile.c.obj
+C:\MinGW\bin\gcc.exe    -o CMakeFiles\cmTC_71686.dir\CheckIncludeFile.c.obj   -c C:\Users\S0ras\CLionProjects\blatt-7-aufgabe-1-1815\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+C:\Users\S0ras\CLionProjects\blatt-7-aufgabe-1-1815\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c:1:21: fatal error: pthread.h: No such file or directory
+ #include <pthread.h>
+                     ^
+compilation terminated.
+CMakeFiles\cmTC_71686.dir\build.make:64: recipe for target 'CMakeFiles/cmTC_71686.dir/CheckIncludeFile.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_71686.dir/CheckIncludeFile.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:125: recipe for target 'cmTC_71686/fast' failed
+mingw32-make.exe: *** [cmTC_71686/fast] Error 2
+
+
+Determining if the include file pthread.h exists failed with the following output:
+Change Dir: C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_ab28c/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_ab28c.dir\build.make CMakeFiles/cmTC_ab28c.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ab28c.dir/CheckIncludeFile.c.obj
+C:\MinGW\bin\gcc.exe    -o CMakeFiles\cmTC_ab28c.dir\CheckIncludeFile.c.obj   -c C:\Users\S0ras\CLionProjects\blatt-7-aufgabe-1-1815\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+C:\Users\S0ras\CLionProjects\blatt-7-aufgabe-1-1815\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c:1:21: fatal error: pthread.h: No such file or directory
+ #include <pthread.h>
+                     ^
+compilation terminated.
+CMakeFiles\cmTC_ab28c.dir\build.make:64: recipe for target 'CMakeFiles/cmTC_ab28c.dir/CheckIncludeFile.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_ab28c.dir/CheckIncludeFile.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:125: recipe for target 'cmTC_ab28c/fast' failed
+mingw32-make.exe: *** [cmTC_ab28c/fast] Error 2
+
+
+Determining if the include file pthread.h exists failed with the following output:
+Change Dir: C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_c67bc/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_c67bc.dir\build.make CMakeFiles/cmTC_c67bc.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c67bc.dir/CheckIncludeFile.c.obj
+C:\MinGW\bin\gcc.exe    -o CMakeFiles\cmTC_c67bc.dir\CheckIncludeFile.c.obj   -c C:\Users\S0ras\CLionProjects\blatt-7-aufgabe-1-1815\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+C:\Users\S0ras\CLionProjects\blatt-7-aufgabe-1-1815\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c:1:21: fatal error: pthread.h: No such file or directory
+ #include <pthread.h>
+                     ^
+compilation terminated.
+CMakeFiles\cmTC_c67bc.dir\build.make:64: recipe for target 'CMakeFiles/cmTC_c67bc.dir/CheckIncludeFile.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_c67bc.dir/CheckIncludeFile.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:125: recipe for target 'cmTC_c67bc/fast' failed
+mingw32-make.exe: *** [cmTC_c67bc/fast] Error 2
+
+
+Determining if the include file pthread.h exists failed with the following output:
+Change Dir: C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_d5d83/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_d5d83.dir\build.make CMakeFiles/cmTC_d5d83.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d5d83.dir/CheckIncludeFile.c.obj
+C:\MinGW\bin\gcc.exe    -o CMakeFiles\cmTC_d5d83.dir\CheckIncludeFile.c.obj   -c C:\Users\S0ras\CLionProjects\blatt-7-aufgabe-1-1815\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+C:\Users\S0ras\CLionProjects\blatt-7-aufgabe-1-1815\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c:1:21: fatal error: pthread.h: No such file or directory
+ #include <pthread.h>
+                     ^
+compilation terminated.
+CMakeFiles\cmTC_d5d83.dir\build.make:64: recipe for target 'CMakeFiles/cmTC_d5d83.dir/CheckIncludeFile.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_d5d83.dir/CheckIncludeFile.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:125: recipe for target 'cmTC_d5d83/fast' failed
+mingw32-make.exe: *** [cmTC_d5d83/fast] Error 2
+
+
+Determining if the include file pthread.h exists failed with the following output:
+Change Dir: C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_17730/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_17730.dir\build.make CMakeFiles/cmTC_17730.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_17730.dir/CheckIncludeFile.c.obj
+C:\MinGW\bin\gcc.exe    -o CMakeFiles\cmTC_17730.dir\CheckIncludeFile.c.obj   -c C:\Users\S0ras\CLionProjects\blatt-7-aufgabe-1-1815\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+C:\Users\S0ras\CLionProjects\blatt-7-aufgabe-1-1815\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c:1:21: fatal error: pthread.h: No such file or directory
+ #include <pthread.h>
+                     ^
+compilation terminated.
+CMakeFiles\cmTC_17730.dir\build.make:64: recipe for target 'CMakeFiles/cmTC_17730.dir/CheckIncludeFile.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_17730.dir/CheckIncludeFile.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:125: recipe for target 'cmTC_17730/fast' failed
+mingw32-make.exe: *** [cmTC_17730/fast] Error 2
+
+
+Determining if the include file pthread.h exists failed with the following output:
+Change Dir: C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_f9fd5/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_f9fd5.dir\build.make CMakeFiles/cmTC_f9fd5.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f9fd5.dir/CheckIncludeFile.c.obj
+C:\MinGW\bin\gcc.exe    -o CMakeFiles\cmTC_f9fd5.dir\CheckIncludeFile.c.obj   -c C:\Users\S0ras\CLionProjects\blatt-7-aufgabe-1-1815\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+C:\Users\S0ras\CLionProjects\blatt-7-aufgabe-1-1815\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c:1:21: fatal error: pthread.h: No such file or directory
+ #include <pthread.h>
+                     ^
+compilation terminated.
+CMakeFiles\cmTC_f9fd5.dir\build.make:64: recipe for target 'CMakeFiles/cmTC_f9fd5.dir/CheckIncludeFile.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_f9fd5.dir/CheckIncludeFile.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:125: recipe for target 'cmTC_f9fd5/fast' failed
+mingw32-make.exe: *** [cmTC_f9fd5/fast] Error 2
+
+
+Determining if the include file pthread.h exists failed with the following output:
+Change Dir: C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_b1397/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_b1397.dir\build.make CMakeFiles/cmTC_b1397.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b1397.dir/CheckIncludeFile.c.obj
+C:\MinGW\bin\gcc.exe    -o CMakeFiles\cmTC_b1397.dir\CheckIncludeFile.c.obj   -c C:\Users\S0ras\CLionProjects\blatt-7-aufgabe-1-1815\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+C:\Users\S0ras\CLionProjects\blatt-7-aufgabe-1-1815\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c:1:21: fatal error: pthread.h: No such file or directory
+ #include <pthread.h>
+                     ^
+compilation terminated.
+CMakeFiles\cmTC_b1397.dir\build.make:64: recipe for target 'CMakeFiles/cmTC_b1397.dir/CheckIncludeFile.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_b1397.dir/CheckIncludeFile.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:125: recipe for target 'cmTC_b1397/fast' failed
+mingw32-make.exe: *** [cmTC_b1397/fast] Error 2
+
+
+Determining if the include file pthread.h exists failed with the following output:
+Change Dir: C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_38ab3/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_38ab3.dir\build.make CMakeFiles/cmTC_38ab3.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_38ab3.dir/CheckIncludeFile.c.obj
+C:\MinGW\bin\gcc.exe    -o CMakeFiles\cmTC_38ab3.dir\CheckIncludeFile.c.obj   -c C:\Users\S0ras\CLionProjects\blatt-7-aufgabe-1-1815\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+C:\Users\S0ras\CLionProjects\blatt-7-aufgabe-1-1815\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c:1:21: fatal error: pthread.h: No such file or directory
+ #include <pthread.h>
+                     ^
+compilation terminated.
+CMakeFiles\cmTC_38ab3.dir\build.make:64: recipe for target 'CMakeFiles/cmTC_38ab3.dir/CheckIncludeFile.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_38ab3.dir/CheckIncludeFile.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:125: recipe for target 'cmTC_38ab3/fast' failed
+mingw32-make.exe: *** [cmTC_38ab3/fast] Error 2
+
+
+Determining if the include file pthread.h exists failed with the following output:
+Change Dir: C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_e3e5e/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_e3e5e.dir\build.make CMakeFiles/cmTC_e3e5e.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e3e5e.dir/CheckIncludeFile.c.obj
+C:\MinGW\bin\gcc.exe    -o CMakeFiles\cmTC_e3e5e.dir\CheckIncludeFile.c.obj   -c C:\Users\S0ras\CLionProjects\blatt-7-aufgabe-1-1815\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+C:\Users\S0ras\CLionProjects\blatt-7-aufgabe-1-1815\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c:1:21: fatal error: pthread.h: No such file or directory
+ #include <pthread.h>
+                     ^
+compilation terminated.
+CMakeFiles\cmTC_e3e5e.dir\build.make:64: recipe for target 'CMakeFiles/cmTC_e3e5e.dir/CheckIncludeFile.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_e3e5e.dir/CheckIncludeFile.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:125: recipe for target 'cmTC_e3e5e/fast' failed
+mingw32-make.exe: *** [cmTC_e3e5e/fast] Error 2
+
+
+Determining if the include file pthread.h exists failed with the following output:
+Change Dir: C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_924b8/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_924b8.dir\build.make CMakeFiles/cmTC_924b8.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_924b8.dir/CheckIncludeFile.c.obj
+C:\MinGW\bin\gcc.exe    -o CMakeFiles\cmTC_924b8.dir\CheckIncludeFile.c.obj   -c C:\Users\S0ras\CLionProjects\blatt-7-aufgabe-1-1815\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+C:\Users\S0ras\CLionProjects\blatt-7-aufgabe-1-1815\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c:1:21: fatal error: pthread.h: No such file or directory
+ #include <pthread.h>
+                     ^
+compilation terminated.
+CMakeFiles\cmTC_924b8.dir\build.make:64: recipe for target 'CMakeFiles/cmTC_924b8.dir/CheckIncludeFile.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_924b8.dir/CheckIncludeFile.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:125: recipe for target 'cmTC_924b8/fast' failed
+mingw32-make.exe: *** [cmTC_924b8/fast] Error 2
+
+
+Determining if the include file pthread.h exists failed with the following output:
+Change Dir: C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_ff971/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_ff971.dir\build.make CMakeFiles/cmTC_ff971.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ff971.dir/CheckIncludeFile.c.obj
+C:\MinGW\bin\gcc.exe    -o CMakeFiles\cmTC_ff971.dir\CheckIncludeFile.c.obj   -c C:\Users\S0ras\CLionProjects\blatt-7-aufgabe-1-1815\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+C:\Users\S0ras\CLionProjects\blatt-7-aufgabe-1-1815\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c:1:21: fatal error: pthread.h: No such file or directory
+ #include <pthread.h>
+                     ^
+compilation terminated.
+CMakeFiles\cmTC_ff971.dir\build.make:64: recipe for target 'CMakeFiles/cmTC_ff971.dir/CheckIncludeFile.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_ff971.dir/CheckIncludeFile.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:125: recipe for target 'cmTC_ff971/fast' failed
+mingw32-make.exe: *** [cmTC_ff971/fast] Error 2
+
+
+Determining if the include file pthread.h exists failed with the following output:
+Change Dir: C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_4e707/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_4e707.dir\build.make CMakeFiles/cmTC_4e707.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4e707.dir/CheckIncludeFile.c.obj
+C:\MinGW\bin\gcc.exe    -o CMakeFiles\cmTC_4e707.dir\CheckIncludeFile.c.obj   -c C:\Users\S0ras\CLionProjects\blatt-7-aufgabe-1-1815\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+C:\Users\S0ras\CLionProjects\blatt-7-aufgabe-1-1815\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c:1:21: fatal error: pthread.h: No such file or directory
+ #include <pthread.h>
+                     ^
+compilation terminated.
+CMakeFiles\cmTC_4e707.dir\build.make:64: recipe for target 'CMakeFiles/cmTC_4e707.dir/CheckIncludeFile.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_4e707.dir/CheckIncludeFile.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:125: recipe for target 'cmTC_4e707/fast' failed
+mingw32-make.exe: *** [cmTC_4e707/fast] Error 2
+
+
+Determining if the include file pthread.h exists failed with the following output:
+Change Dir: C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_98307/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_98307.dir\build.make CMakeFiles/cmTC_98307.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_98307.dir/CheckIncludeFile.c.obj
+C:\MinGW\bin\gcc.exe    -o CMakeFiles\cmTC_98307.dir\CheckIncludeFile.c.obj   -c C:\Users\S0ras\CLionProjects\blatt-7-aufgabe-1-1815\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+C:\Users\S0ras\CLionProjects\blatt-7-aufgabe-1-1815\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c:1:21: fatal error: pthread.h: No such file or directory
+ #include <pthread.h>
+                     ^
+compilation terminated.
+CMakeFiles\cmTC_98307.dir\build.make:64: recipe for target 'CMakeFiles/cmTC_98307.dir/CheckIncludeFile.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_98307.dir/CheckIncludeFile.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:125: recipe for target 'cmTC_98307/fast' failed
+mingw32-make.exe: *** [cmTC_98307/fast] Error 2
+
+
+Determining if the include file pthread.h exists failed with the following output:
+Change Dir: C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_b49a0/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_b49a0.dir\build.make CMakeFiles/cmTC_b49a0.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b49a0.dir/CheckIncludeFile.c.obj
+C:\MinGW\bin\gcc.exe    -o CMakeFiles\cmTC_b49a0.dir\CheckIncludeFile.c.obj   -c C:\Users\S0ras\CLionProjects\blatt-7-aufgabe-1-1815\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+C:\Users\S0ras\CLionProjects\blatt-7-aufgabe-1-1815\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c:1:21: fatal error: pthread.h: No such file or directory
+ #include <pthread.h>
+                     ^
+compilation terminated.
+CMakeFiles\cmTC_b49a0.dir\build.make:64: recipe for target 'CMakeFiles/cmTC_b49a0.dir/CheckIncludeFile.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_b49a0.dir/CheckIncludeFile.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:125: recipe for target 'cmTC_b49a0/fast' failed
+mingw32-make.exe: *** [cmTC_b49a0/fast] Error 2
+
+
+Determining if the include file pthread.h exists failed with the following output:
+Change Dir: C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_bb112/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_bb112.dir\build.make CMakeFiles/cmTC_bb112.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_bb112.dir/CheckIncludeFile.c.obj
+C:\MinGW\bin\gcc.exe    -o CMakeFiles\cmTC_bb112.dir\CheckIncludeFile.c.obj   -c C:\Users\S0ras\CLionProjects\blatt-7-aufgabe-1-1815\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+C:\Users\S0ras\CLionProjects\blatt-7-aufgabe-1-1815\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c:1:21: fatal error: pthread.h: No such file or directory
+ #include <pthread.h>
+                     ^
+compilation terminated.
+CMakeFiles\cmTC_bb112.dir\build.make:64: recipe for target 'CMakeFiles/cmTC_bb112.dir/CheckIncludeFile.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_bb112.dir/CheckIncludeFile.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:125: recipe for target 'cmTC_bb112/fast' failed
+mingw32-make.exe: *** [cmTC_bb112/fast] Error 2
+
+
+Determining if the include file pthread.h exists failed with the following output:
+Change Dir: C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_7f6d4/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_7f6d4.dir\build.make CMakeFiles/cmTC_7f6d4.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7f6d4.dir/CheckIncludeFile.c.obj
+C:\MinGW\bin\gcc.exe    -o CMakeFiles\cmTC_7f6d4.dir\CheckIncludeFile.c.obj   -c C:\Users\S0ras\CLionProjects\blatt-7-aufgabe-1-1815\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+C:\Users\S0ras\CLionProjects\blatt-7-aufgabe-1-1815\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c:1:21: fatal error: pthread.h: No such file or directory
+ #include <pthread.h>
+                     ^
+compilation terminated.
+CMakeFiles\cmTC_7f6d4.dir\build.make:64: recipe for target 'CMakeFiles/cmTC_7f6d4.dir/CheckIncludeFile.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_7f6d4.dir/CheckIncludeFile.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:125: recipe for target 'cmTC_7f6d4/fast' failed
+mingw32-make.exe: *** [cmTC_7f6d4/fast] Error 2
+
+
+Determining if the include file pthread.h exists failed with the following output:
+Change Dir: C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_b92fe/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_b92fe.dir\build.make CMakeFiles/cmTC_b92fe.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b92fe.dir/CheckIncludeFile.c.obj
+C:\MinGW\bin\gcc.exe    -o CMakeFiles\cmTC_b92fe.dir\CheckIncludeFile.c.obj   -c C:\Users\S0ras\CLionProjects\blatt-7-aufgabe-1-1815\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+C:\Users\S0ras\CLionProjects\blatt-7-aufgabe-1-1815\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c:1:21: fatal error: pthread.h: No such file or directory
+ #include <pthread.h>
+                     ^
+compilation terminated.
+CMakeFiles\cmTC_b92fe.dir\build.make:64: recipe for target 'CMakeFiles/cmTC_b92fe.dir/CheckIncludeFile.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_b92fe.dir/CheckIncludeFile.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:125: recipe for target 'cmTC_b92fe/fast' failed
+mingw32-make.exe: *** [cmTC_b92fe/fast] Error 2
+
+
+Determining if the include file pthread.h exists failed with the following output:
+Change Dir: C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_cb90f/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_cb90f.dir\build.make CMakeFiles/cmTC_cb90f.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_cb90f.dir/CheckIncludeFile.c.obj
+C:\MinGW\bin\gcc.exe    -o CMakeFiles\cmTC_cb90f.dir\CheckIncludeFile.c.obj   -c C:\Users\S0ras\CLionProjects\blatt-7-aufgabe-1-1815\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+C:\Users\S0ras\CLionProjects\blatt-7-aufgabe-1-1815\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c:1:21: fatal error: pthread.h: No such file or directory
+ #include <pthread.h>
+                     ^
+compilation terminated.
+CMakeFiles\cmTC_cb90f.dir\build.make:64: recipe for target 'CMakeFiles/cmTC_cb90f.dir/CheckIncludeFile.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_cb90f.dir/CheckIncludeFile.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:125: recipe for target 'cmTC_cb90f/fast' failed
+mingw32-make.exe: *** [cmTC_cb90f/fast] Error 2
+
+
+Determining if the include file pthread.h exists failed with the following output:
+Change Dir: C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_1e157/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_1e157.dir\build.make CMakeFiles/cmTC_1e157.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1e157.dir/CheckIncludeFile.c.obj
+C:\MinGW\bin\gcc.exe    -o CMakeFiles\cmTC_1e157.dir\CheckIncludeFile.c.obj   -c C:\Users\S0ras\CLionProjects\blatt-7-aufgabe-1-1815\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+C:\Users\S0ras\CLionProjects\blatt-7-aufgabe-1-1815\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c:1:21: fatal error: pthread.h: No such file or directory
+ #include <pthread.h>
+                     ^
+compilation terminated.
+CMakeFiles\cmTC_1e157.dir\build.make:64: recipe for target 'CMakeFiles/cmTC_1e157.dir/CheckIncludeFile.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_1e157.dir/CheckIncludeFile.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:125: recipe for target 'cmTC_1e157/fast' failed
+mingw32-make.exe: *** [cmTC_1e157/fast] Error 2
+
+
+Determining if the include file pthread.h exists failed with the following output:
+Change Dir: C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_b54ab/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_b54ab.dir\build.make CMakeFiles/cmTC_b54ab.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b54ab.dir/CheckIncludeFile.c.obj
+C:\MinGW\bin\gcc.exe    -o CMakeFiles\cmTC_b54ab.dir\CheckIncludeFile.c.obj   -c C:\Users\S0ras\CLionProjects\blatt-7-aufgabe-1-1815\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+C:\Users\S0ras\CLionProjects\blatt-7-aufgabe-1-1815\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c:1:21: fatal error: pthread.h: No such file or directory
+ #include <pthread.h>
+                     ^
+compilation terminated.
+CMakeFiles\cmTC_b54ab.dir\build.make:64: recipe for target 'CMakeFiles/cmTC_b54ab.dir/CheckIncludeFile.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_b54ab.dir/CheckIncludeFile.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/S0ras/CLionProjects/blatt-7-aufgabe-1-1815/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:125: recipe for target 'cmTC_b54ab/fast' failed
+mingw32-make.exe: *** [cmTC_b54ab/fast] Error 2
+
+
