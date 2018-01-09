@@ -50,8 +50,8 @@ AvlTree::Node *AvlTree::getNode(const int value) {
 
 AvlTree::Node *AvlTree::Node::getNode(const int value) {
     if(this->key == value)return this;
-    if(value < key  && this->left == nullptr)return this->left->getNode(value);
-    if(value > key  && this->right == nullptr)return this->right->getNode(value);
+    if(value < key  && this->left != nullptr)return this->left->getNode(value);
+    if(value > key  && this->right != nullptr)return this->right->getNode(value);
     return nullptr;
 }
 
@@ -61,6 +61,7 @@ void AvlTree::insert(const int value) {
     //case: empty tree
     if(root == nullptr)root = new Node(value);
     else root->insert(value, this);
+    checkBalances();
 }
 
 void AvlTree::Node::insert(const int value, AvlTree *tree) {
@@ -106,6 +107,7 @@ void AvlTree::Node::insert(const int value, AvlTree *tree) {
             upin(tree);
             break;
     }
+
 }
 
 ///upin
@@ -337,7 +339,6 @@ AvlTree::Node *AvlTree::Node::remove(const int value) {
 }
 
 
-
 /********************************************************************
  * operator<<
  *******************************************************************/
@@ -389,4 +390,54 @@ void AvlTree::generatePic(const int n) {
     std::stringstream tmp2;
     tmp2 << "dot -Tpng tree" << n << ".dot" << " -o tree" << n << ".png";
     system(tmp2.str().c_str());
+}
+
+
+///Debug methods
+
+
+bool AvlTree::checkBalances() {
+    return root->checkBalances();
+
+}
+
+bool AvlTree::Node::checkBalances() {
+    checkBalance();
+    if(left != nullptr)left->checkBalances();
+    if(right != nullptr)right->checkBalances();
+    return true;
+}
+
+bool AvlTree::Node::checkBalance() {
+    int l;
+    int r;
+    if(left != nullptr)l= left->getDepth();
+    else l = 0;
+    if(right != nullptr)r= right->getDepth();
+    else r = 0;
+    int expected = r - l ;
+    if(expected != balance ){
+        cout << "Balance of " << key << " at depth " << getDepth() << " is " << balance << " but should be " << expected << endl;
+        return false;
+    }
+    return true;
+}
+
+int AvlTree::Node::getDepth() {
+    if(left == nullptr){
+        if(right == nullptr){
+            return 1;
+        }
+        return right->getDepth()+1;
+    }else {
+        if(right == nullptr){
+            return left->getDepth() +1;
+        }
+        else {
+            int r = right->getDepth();
+            int l = left->getDepth();
+            if(r > l)return r +1;
+            return l +1;
+        }
+    }
 }

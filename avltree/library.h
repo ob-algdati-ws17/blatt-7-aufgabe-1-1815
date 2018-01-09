@@ -32,6 +32,9 @@ private:
         void insert(const int, AvlTree *);
         Node *remove(const int);
         Node *getNode(const int);
+        int getDepth();
+        bool checkBalance();
+        bool checkBalances();
 
         ///rotations
         Node* rotateLeft(AvlTree *);
@@ -61,6 +64,8 @@ public:
     void generatePic(const int);
 
     Node *getNode(const int);
+
+    bool checkBalances();
 
     friend ostream &operator<<(ostream &, const AvlTree &);
 

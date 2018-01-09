@@ -8,6 +8,22 @@
 using namespace std;
 
 
+TEST(AvlTreeTest, Depth_Test){
+    AvlTree t;
+    t.insert(7);
+    t.insert(5);
+    t.insert(9);
+    t.insert(4);
+    t.insert(8);
+    t.insert(6);
+    t.generatePic(100);
+    EXPECT_TRUE(t.getNode(7)->getDepth() == 3);
+    EXPECT_TRUE(t.getNode(9)->getDepth() == 2);
+    EXPECT_TRUE(t.getNode(8)->getDepth() == 1);
+
+}
+
+
 TEST(AvlTreeTest, Insert_Test) {
     AvlTree t;
     t.insert(50);
