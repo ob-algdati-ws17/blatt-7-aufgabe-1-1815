@@ -1,10 +1,14 @@
 cmake_minimum_required(VERSION 3.8)
 project(blatt_7_aufgabe_1_1815)
 
+
+
 set(CMAKE_CXX_STANDARD 11)
 
-set(SOURCE_FILES avltree/library.cpp avltree/library.h test/testAvltree.h test/testAvltree.cpp)
+add_subdirectory(avltree)
+
 add_library(blatt_7_aufgabe_1_1815 ${SOURCE_FILES})
+target_link_libraries(blatt_7_aufgabe_1_1815 LINK_PUBLIC avltree)
 
 # GoogleTest
 
