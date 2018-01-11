@@ -26,15 +26,18 @@ private:
 
 
         void upin(AvlTree *);
+        void upout(AvlTree *);
 
         ///basic operations
         bool search(const int) const;
         void insert(const int, AvlTree *);
-        Node *remove(const int);
+
         Node *getNode(const int);
         int getDepth();
         bool checkBalance();
         bool checkBalances();
+
+        void reevaluateBalance();
 
         ///rotations
         Node* rotateLeft(AvlTree *);
@@ -42,15 +45,19 @@ private:
         Node* rotateLeftRight(AvlTree *);
         Node* rotateRightLeft(AvlTree *);
 
+        Node* findSymmetricSuccessor();
+
     };
 
 
 
-    ///root of the tree
-    Node *root = nullptr;
+
 
 
 public:
+    ///root of the tree
+    Node *root = nullptr;
+
     ~AvlTree();
 
     bool search(const int) const;

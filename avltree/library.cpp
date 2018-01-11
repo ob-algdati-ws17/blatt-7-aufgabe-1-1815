@@ -195,7 +195,7 @@ AvlTree::Node *AvlTree::Node::rotateLeft(AvlTree *tree) {
 
     y->right = t2;
     if(t2 != nullptr)t2->previous = y;
-    return nullptr;
+    return x;
 }
 
 AvlTree::Node *AvlTree::Node::rotateRight(AvlTree *tree) {
@@ -228,7 +228,7 @@ AvlTree::Node *AvlTree::Node::rotateRight(AvlTree *tree) {
 
     y->right = t3;
     if(t3 != nullptr)t3->previous = y;
-    return nullptr;
+    return x;
 }
 
 AvlTree::Node *AvlTree::Node::rotateLeftRight(AvlTree *tree) {
@@ -277,7 +277,12 @@ AvlTree::Node *AvlTree::Node::rotateLeftRight(AvlTree *tree) {
     z->right = t4;
     if(t4 != nullptr)t4->previous = z;
 
-    return nullptr;
+
+    //fix balances
+    x->reevaluateBalance();
+    z->reevaluateBalance();
+
+    return y;
 }
 
 AvlTree::Node *AvlTree::Node::rotateRightLeft(AvlTree *tree) {
@@ -325,19 +330,171 @@ AvlTree::Node *AvlTree::Node::rotateRightLeft(AvlTree *tree) {
 
     z->right = t4;
     if(t4 != nullptr)t4->previous = z;
-    return nullptr;
+
+    //fix balances
+    x->reevaluateBalance();
+    z->reevaluateBalance();
+    return y;
 }
 
 
 ///Remove
 void AvlTree::remove(const int value) {
+    auto toRemove = getNode(value);
+    if(toRemove == nullptr)return;
+
+    //both succesors are leaves
+    if(toRemove->left == nullptr && toRemove->right == nullptr){
+        auto prev = toRemove->previous;
+        Node* q;
+        if(prev->left != nullptr && prev->left->key == toRemove->key){ // toRemove is left successor
+            prev->left = nullptr;
+            q = prev->right;
+
+            if(q == nullptr){ // q has depth 0
+                prev->balance = 0;
+                prev->upout(this);
+            }
+            else if( q->getDepth() == 1){ // q has depth 1
+                prev->balance = 1;
+            }
+            else { // q has depth 2
+                if(q->balance == 0) // q has 2 succs
+                {
+                    q->rotateLeft(this)->upout(this);
+                } else if(q->balance = 1){ // q has right succ
+                    q->rotateLeft(this)->upout(this);
+                }else { // q has left succ
+                    q->rotateRightLeft(this)->upout(this);
+                }
+            }
+
+        }else { // toRemove is right successor
+            prev->right = nullptr;
+            q = prev->left;
+
+            if(q == nullptr){ // q has depth 0
+                prev->balance = 0;
+                prev->upout(this);
+            }
+            else if( q->getDepth() == 1){ // q has depth 1
+                prev->balance = -1;
+            }
+            else { // q has depth 2
+                if(q->balance == 0) // q has 2 succs
+                {
+                    q->rotateRight(this)->upout(this);
+                } else if(q->balance = 1){ // q has right succ
+                    q->rotateLeftRight(this)->upout(this);
+                }else { // q has left succ
+                    q->rotateRight(this)->upout(this);
+                }
+            }
+        }
+        delete toRemove;
+
+
+
+    }//both are inner knots
+    else if(toRemove->right != nullptr && toRemove->left != nullptr){
+        auto symsucc = toRemove->right->findSymmetricSuccessor();
+        ///should instead refactor the remove method into two, one to remove nodes
+        int tmp = toRemove->key;
+        toRemove->key = symsucc->key;
+        symsucc->key = tmp;
+        remove(tmp);
+    }//one is a leaf
+    else {
+        if(toRemove->right != nullptr){
+            toRemove->key = toRemove->right->key;
+            toRemove->right = nullptr;
+        }
+        else {
+            toRemove->key = toRemove->left->key;
+            toRemove->left = nullptr;
+        }
+        toRemove->upout(this);
+    }
+
 
 }
 
-AvlTree::Node *AvlTree::Node::remove(const int value) {
-    return nullptr;
+//finds symmetric succesor, needs to be called with the root of the right part of the tree
+AvlTree::Node *AvlTree::Node::findSymmetricSuccessor() {
+    auto smallest = this;
+    if(left != nullptr){
+        auto l = left->findSymmetricSuccessor();
+        if(l->key < smallest->key)smallest = l;
+    }
+    if(right != nullptr){
+        auto r = right->findSymmetricSuccessor();
+        if(r->key < smallest->key)smallest =r ;
+    }
+    return smallest;
 }
 
+//upout
+void AvlTree::Node::upout(AvlTree *tree) {
+    if(previous== nullptr)return;
+    auto prev = this->previous;
+    if(prev->left != nullptr && prev->left->key == key){ //p is left successor
+        switch(prev->balance){
+            case -1:
+                prev->balance = 0;
+                prev->upout(tree);
+                break;
+            case 0:
+                prev->balance = 1;
+                break;
+            case 1: //right tree was higher than left
+                if(prev->right->balance == 0){ //1.3.1
+                    prev->rotateLeft(tree);
+                }
+                else if (prev->right->balance == 1){ //1.3.2
+                    prev->rotateLeft(tree)->upout(tree);
+                }
+                else { // 1.3.3
+                    prev->rotateLeftRight(tree)->upout(tree);
+                }
+                break;
+        }
+    }
+    else { // p is right successor
+        switch(prev->balance){
+            case 1:
+                prev->balance = 0;
+                prev->upout(tree);
+                break;
+            case 0:
+                prev->balance = -1;
+                break;
+            case -1: //left tree was higher than right
+                if(prev->left->balance == 0){ //1.3.1 rev
+                    prev->rotateRight(tree);
+                }
+                else if (prev->left->balance == 1){ //1.3.3 rev
+                    prev->rotateRightLeft(tree)->upout(tree);
+                }
+                else { // 1.3.2 rev
+                    prev->rotateRight(tree)->upout(tree);
+                }
+                break;
+        }
+    }
+
+}
+
+
+//
+void AvlTree::Node::reevaluateBalance() {
+    int ld, rd;
+    if(left != nullptr)ld = left->getDepth();
+    else ld = 0;
+    if(right != nullptr)rd = right->getDepth();
+    else rd = 0;
+
+    balance = rd -ld;
+}
 
 /********************************************************************
  * operator<<
