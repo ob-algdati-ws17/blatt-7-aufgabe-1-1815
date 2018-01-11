@@ -7,51 +7,49 @@
 #include <sstream>
 
 
-AvlTree::Node::Node(const int value): key(value) {
+AvlTree::Node::Node(const int value) : key(value) {
 
 }
 
-AvlTree::Node::Node(const int value, AvlTree::Node *l, AvlTree::Node *r): key(value), left(l), right(r) {
+AvlTree::Node::Node(const int value, AvlTree::Node *l, AvlTree::Node *r) : key(value), left(l), right(r) {
 
 }
 
 ///Destructors
 AvlTree::Node::~Node() {
-    if(left != nullptr)delete left;
-    if(right != nullptr)delete right;
+    if (left != nullptr)delete left;
+    if (right != nullptr)delete right;
 }
 
 
 AvlTree::~AvlTree() {
-
+    if (root != nullptr)delete root;
 }
-
 
 
 ///Search
 bool AvlTree::search(const int value) const {
-    if(root == nullptr)return false;
+    if (root == nullptr)return false;
     return root->search(value);
 }
 
 bool AvlTree::Node::search(const int value) const {
-    if(this->key == value)return true;
-    if(value < key  && this->left == nullptr)return this->left->search(value);
-    if(value > key  && this->right == nullptr)return this->right->search(value);
+    if (this->key == value)return true;
+    if (value < key && this->left == nullptr)return this->left->search(value);
+    if (value > key && this->right == nullptr)return this->right->search(value);
     return false;
 }
 
 ///Get
-
 AvlTree::Node *AvlTree::getNode(const int value) {
-    if(root == nullptr)return nullptr;
+    if (root == nullptr)return nullptr;
     return root->getNode(value);
 }
 
 AvlTree::Node *AvlTree::Node::getNode(const int value) {
-    if(this->key == value)return this;
-    if(value < key  && this->left != nullptr)return this->left->getNode(value);
-    if(value > key  && this->right != nullptr)return this->right->getNode(value);
+    if (this->key == value)return this;
+    if (value < key && this->left != nullptr)return this->left->getNode(value);
+    if (value > key && this->right != nullptr)return this->right->getNode(value);
     return nullptr;
 }
 
@@ -59,39 +57,34 @@ AvlTree::Node *AvlTree::Node::getNode(const int value) {
 ///Insert
 void AvlTree::insert(const int value) {
     //case: empty tree
-    if(root == nullptr)root = new Node(value);
+    if (root == nullptr)root = new Node(value);
     else root->insert(value, this);
-    checkBalances();
+    //checkBalances();
 }
 
 void AvlTree::Node::insert(const int value, AvlTree *tree) {
     //normal binary search and insertion
-    if(value == key)return;
-    if(value < key){
-        if(left == nullptr){
+    if (value == key)return;
+    if (value < key) {
+        if (left == nullptr) {
             left = new Node(value);
             left->previous = this;
-        }
-        else {
+        } else {
             left->insert(value, tree);
             return;
         }
-    }
-    else if(value > key){
-        if(right == nullptr){
+    } else if (value > key) {
+        if (right == nullptr) {
             right = new Node(value);
             right->previous = this;
-        }
-        else {
+        } else {
             right->insert(value, tree);
             return;
         }
-
     }
-
     //Update, can be shortened
     //should only be called once
-    switch(balance){
+    switch (balance) {
         case +1:
             balance = 0;
             break;
@@ -99,24 +92,22 @@ void AvlTree::Node::insert(const int value, AvlTree *tree) {
             balance = 0;
             break;
         case 0:
-            if(value > key){
+            if (value > key) {
                 balance = 1;
-            }else {
+            } else {
                 balance = -1;
             }
             upin(tree);
             break;
     }
-
 }
 
 ///upin
-void AvlTree::Node::upin(AvlTree *tree){
+void AvlTree::Node::upin(AvlTree *tree) {
     //check if root is reached
-    if(previous== nullptr)return;
-
+    if (previous == nullptr)return;
     ///Fall 1: p ist linker Nachfolger von φp
-    if(previous->left != nullptr  && previous->left->key == key) {
+    if (previous->left != nullptr && previous->left->key == key) {
         switch (previous->balance) {
             case 1:
                 previous->balance = 0;
@@ -127,17 +118,16 @@ void AvlTree::Node::upin(AvlTree *tree){
                 break;
             case -1:
                 ///the left part of the tree was already bigger
-                if(balance == -1){ ///case 1.3.1
+                if (balance == -1) { ///case 1.3.1
                     rotateRight(tree);
-                }
-                else if(balance == 1){ ///case 1.3.2
+                } else if (balance == 1) { ///case 1.3.2
                     rotateLeftRight(tree);
                 }
                 break;
         }
     }
-    ///Fall 2: p ist rechter Nachfolger von φp
-    else{
+        ///Fall 2: p ist rechter Nachfolger von φp
+    else {
         switch (previous->balance) {
             case -1:
                 previous->balance = 0;
@@ -148,16 +138,14 @@ void AvlTree::Node::upin(AvlTree *tree){
                 break;
             case 1:
                 ///the left part of the tree was already bigger
-                if(balance == 1){ ///case 1.3.1
+                if (balance == 1) { ///case 1.3.1
                     rotateLeft(tree);
-                }
-                else if(balance == -1){ ///case 1.3.2
+                } else if (balance == -1) { ///case 1.3.2
                     rotateRightLeft(tree);
                 }
                 break;
         }
     }
-
 
 
 };
@@ -172,15 +160,14 @@ AvlTree::Node *AvlTree::Node::rotateLeft(AvlTree *tree) {
     auto t2 = left;
     auto t3 = right;
 
-
     //find out if y is left or right child, update root if needed
-    if(ypre != nullptr){
-        if(ypre->left != nullptr  &&ypre->left->key == y->key) { //left child
+    if (ypre != nullptr) {
+        if (ypre->left != nullptr && ypre->left->key == y->key) { //left child
             ypre->left = x;
-        }else { //right child
+        } else { //right child
             ypre->right = x;
         }
-    }else {
+    } else {
         tree->root = x;
     }
     x->balance = 0;
@@ -191,10 +178,10 @@ AvlTree::Node *AvlTree::Node::rotateLeft(AvlTree *tree) {
     y->previous = x;
 
     y->left = t1;
-    if(t1 != nullptr)t1->previous = y;
+    if (t1 != nullptr)t1->previous = y;
 
     y->right = t2;
-    if(t2 != nullptr)t2->previous = y;
+    if (t2 != nullptr)t2->previous = y;
     return x;
 }
 
@@ -207,13 +194,13 @@ AvlTree::Node *AvlTree::Node::rotateRight(AvlTree *tree) {
     auto t3 = y->right;
 
     //find out if y is left or right child, update root if needed
-    if(ypre != nullptr){
-        if(ypre->left != nullptr  &&ypre->left->key == y->key) { //left child
+    if (ypre != nullptr) {
+        if (ypre->left != nullptr && ypre->left->key == y->key) { //left child
             ypre->left = x;
-        }else { //right child
+        } else { //right child
             ypre->right = x;
         }
-    }else {
+    } else {
         tree->root = x;
     }
     x->balance = 0;
@@ -224,10 +211,10 @@ AvlTree::Node *AvlTree::Node::rotateRight(AvlTree *tree) {
     y->previous = x;
 
     y->left = t2;
-    if(t2 != nullptr)t2->previous = y;
+    if (t2 != nullptr)t2->previous = y;
 
     y->right = t3;
-    if(t3 != nullptr)t3->previous = y;
+    if (t3 != nullptr)t3->previous = y;
     return x;
 }
 
@@ -243,13 +230,13 @@ AvlTree::Node *AvlTree::Node::rotateLeftRight(AvlTree *tree) {
     int h = y->balance;
 
     //find out if z is left or right child
-    if(zpre != nullptr){
-        if(zpre->left != nullptr  && zpre->left->key == z->key) { //left child
+    if (zpre != nullptr) {
+        if (zpre->left != nullptr && zpre->left->key == z->key) { //left child
             zpre->left = y;
-        }else { //right child
+        } else { //right child
             zpre->right = y;
         }
-    }else { //update root
+    } else { //update root
         tree->root = y;
     }
     y->balance = 0;
@@ -261,10 +248,10 @@ AvlTree::Node *AvlTree::Node::rotateLeftRight(AvlTree *tree) {
     x->balance = h;
 
     x->left = t1;
-    if(t1 != nullptr)t1->previous = x;
+    if (t1 != nullptr)t1->previous = x;
 
     x->right = t2;
-    if(t2 != nullptr)t2->previous = x;
+    if (t2 != nullptr)t2->previous = x;
 
     //z and childs
     y->right = z;
@@ -272,10 +259,10 @@ AvlTree::Node *AvlTree::Node::rotateLeftRight(AvlTree *tree) {
     z->balance = h;
 
     z->left = t3;
-    if(t3 != nullptr)t3->previous = z;
+    if (t3 != nullptr)t3->previous = z;
 
     z->right = t4;
-    if(t4 != nullptr)t4->previous = z;
+    if (t4 != nullptr)t4->previous = z;
 
 
     //fix balances
@@ -297,13 +284,13 @@ AvlTree::Node *AvlTree::Node::rotateRightLeft(AvlTree *tree) {
     int h = y->balance;
 
     //find out if z is left or right child
-    if(zpre != nullptr){
-        if(zpre->left != nullptr  && zpre->left->key == z->key) { //left child
+    if (zpre != nullptr) {
+        if (zpre->left != nullptr && zpre->left->key == z->key) { //left child
             zpre->left = y;
-        }else { //right child
+        } else { //right child
             zpre->right = y;
         }
-    }else { //update root
+    } else { //update root
         tree->root = y;
     }
     y->balance = 0;
@@ -315,10 +302,10 @@ AvlTree::Node *AvlTree::Node::rotateRightLeft(AvlTree *tree) {
     x->balance = h;
 
     x->left = t1;
-    if(t1 != nullptr)t1->previous = x;
+    if (t1 != nullptr)t1->previous = x;
 
     x->right = t2;
-    if(t2 != nullptr)t2->previous = x;
+    if (t2 != nullptr)t2->previous = x;
 
     //z and childs
     y->left = z;
@@ -326,10 +313,10 @@ AvlTree::Node *AvlTree::Node::rotateRightLeft(AvlTree *tree) {
     z->balance = h;
 
     z->left = t3;
-    if(t3 != nullptr)t3->previous = z;
+    if (t3 != nullptr)t3->previous = z;
 
     z->right = t4;
-    if(t4 != nullptr)t4->previous = z;
+    if (t4 != nullptr)t4->previous = z;
 
     //fix balances
     x->reevaluateBalance();
@@ -341,104 +328,94 @@ AvlTree::Node *AvlTree::Node::rotateRightLeft(AvlTree *tree) {
 ///Remove
 void AvlTree::remove(const int value) {
     auto toRemove = getNode(value);
-    if(toRemove == nullptr)return;
+    if (toRemove == nullptr)return;
 
     //both succesors are leaves
-    if(toRemove->left == nullptr && toRemove->right == nullptr){
+    if (toRemove->left == nullptr && toRemove->right == nullptr) {
         auto prev = toRemove->previous;
-        Node* q;
-        if(prev->left != nullptr && prev->left->key == toRemove->key){ // toRemove is left successor
+        Node *q;
+        if (prev->left != nullptr && prev->left->key == toRemove->key) { // toRemove is left successor
             prev->left = nullptr;
             q = prev->right;
 
-            if(q == nullptr){ // q has depth 0
+            if (q == nullptr) { // q has depth 0
                 prev->balance = 0;
                 prev->upout(this);
-            }
-            else if( q->getDepth() == 1){ // q has depth 1
+            } else if (q->getDepth() == 1) { // q has depth 1
                 prev->balance = 1;
-            }
-            else { // q has depth 2
-                if(q->balance == 0) // q has 2 succs
+            } else { // q has depth 2
+                if (q->balance == 0) // q has 2 succs
                 {
                     q->rotateLeft(this)->upout(this);
-                } else if(q->balance = 1){ // q has right succ
+                } else if (q->balance == 1) { // q has right succ
                     q->rotateLeft(this)->upout(this);
-                }else { // q has left succ
+                } else { // q has left succ
                     q->rotateRightLeft(this)->upout(this);
                 }
             }
 
-        }else { // toRemove is right successor
+        } else { // toRemove is right successor
             prev->right = nullptr;
             q = prev->left;
 
-            if(q == nullptr){ // q has depth 0
+            if (q == nullptr) { // q has depth 0
                 prev->balance = 0;
                 prev->upout(this);
-            }
-            else if( q->getDepth() == 1){ // q has depth 1
+            } else if (q->getDepth() == 1) { // q has depth 1
                 prev->balance = -1;
-            }
-            else { // q has depth 2
-                if(q->balance == 0) // q has 2 succs
+            } else { // q has depth 2
+                if (q->balance == 0) // q has 2 succs
                 {
                     q->rotateRight(this)->upout(this);
-                } else if(q->balance = 1){ // q has right succ
+                } else if (q->balance == 1) { // q has right succ
                     q->rotateLeftRight(this)->upout(this);
-                }else { // q has left succ
+                } else { // q has left succ
                     q->rotateRight(this)->upout(this);
                 }
             }
         }
         delete toRemove;
-
-
-
-    }//both are inner knots
-    else if(toRemove->right != nullptr && toRemove->left != nullptr){
+    }
+    else if (toRemove->right != nullptr && toRemove->left != nullptr) {//both are inner knots
         auto symsucc = toRemove->right->findSymmetricSuccessor();
-        ///should instead refactor the remove method into two, one to remove nodes
+        //should instead refactor the remove method into two, one to remove nodes
         int tmp = toRemove->key;
         toRemove->key = symsucc->key;
         symsucc->key = tmp;
         remove(tmp);
     }//one is a leaf
     else {
-        if(toRemove->right != nullptr){
+        if (toRemove->right != nullptr) {
             toRemove->key = toRemove->right->key;
             toRemove->right = nullptr;
-        }
-        else {
+        } else {
             toRemove->key = toRemove->left->key;
             toRemove->left = nullptr;
         }
         toRemove->upout(this);
     }
-
-
 }
 
-//finds symmetric succesor, needs to be called with the root of the right part of the tree
+///finds symmetric succesor, needs to be called with the root of the right part of the tree
 AvlTree::Node *AvlTree::Node::findSymmetricSuccessor() {
     auto smallest = this;
-    if(left != nullptr){
+    if (left != nullptr) {
         auto l = left->findSymmetricSuccessor();
-        if(l->key < smallest->key)smallest = l;
+        if (l->key < smallest->key)smallest = l;
     }
-    if(right != nullptr){
+    if (right != nullptr) {
         auto r = right->findSymmetricSuccessor();
-        if(r->key < smallest->key)smallest =r ;
+        if (r->key < smallest->key)smallest = r;
     }
     return smallest;
 }
 
-//upout
+///upout
 void AvlTree::Node::upout(AvlTree *tree) {
-    if(previous== nullptr)return;
+    if (previous == nullptr)return;
     auto prev = this->previous;
-    if(prev->left != nullptr && prev->left->key == key){ //p is left successor
-        switch(prev->balance){
+    if (prev->left != nullptr && prev->left->key == key) { //p is left successor
+        switch (prev->balance) {
             case -1:
                 prev->balance = 0;
                 prev->upout(tree);
@@ -447,20 +424,17 @@ void AvlTree::Node::upout(AvlTree *tree) {
                 prev->balance = 1;
                 break;
             case 1: //right tree was higher than left
-                if(prev->right->balance == 0){ //1.3.1
-                    prev->rotateLeft(tree);
-                }
-                else if (prev->right->balance == 1){ //1.3.2
-                    prev->rotateLeft(tree)->upout(tree);
-                }
-                else { // 1.3.3
-                    prev->rotateLeftRight(tree)->upout(tree);
+                if (prev->right->balance == 0) { //1.3.1
+                    prev->right->rotateLeft(tree);
+                } else if (prev->right->balance == 1) { //1.3.2
+                    prev->right->rotateLeft(tree)->upout(tree);
+                } else { // 1.3.3
+                    prev->right->rotateLeftRight(tree)->upout(tree);
                 }
                 break;
         }
-    }
-    else { // p is right successor
-        switch(prev->balance){
+    } else { // p is right successor
+        switch (prev->balance) {
             case 1:
                 prev->balance = 0;
                 prev->upout(tree);
@@ -469,31 +443,46 @@ void AvlTree::Node::upout(AvlTree *tree) {
                 prev->balance = -1;
                 break;
             case -1: //left tree was higher than right
-                if(prev->left->balance == 0){ //1.3.1 rev
-                    prev->rotateRight(tree);
-                }
-                else if (prev->left->balance == 1){ //1.3.3 rev
-                    prev->rotateRightLeft(tree)->upout(tree);
-                }
-                else { // 1.3.2 rev
-                    prev->rotateRight(tree)->upout(tree);
+                if (prev->left->balance == 0) { //1.3.1 rev
+                    prev->left->rotateRight(tree);
+                } else if (prev->left->balance == 1) { //1.3.3 rev
+                    prev->left->rotateRightLeft(tree)->upout(tree);
+                } else { // 1.3.2 rev
+                    prev->left->rotateRight(tree)->upout(tree);
                 }
                 break;
         }
     }
-
 }
 
 
-//
+///recalculates the Balance of a node
 void AvlTree::Node::reevaluateBalance() {
     int ld, rd;
-    if(left != nullptr)ld = left->getDepth();
+    if (left != nullptr)ld = left->getDepth();
     else ld = 0;
-    if(right != nullptr)rd = right->getDepth();
+    if (right != nullptr)rd = right->getDepth();
     else rd = 0;
+    balance = rd - ld;
+}
 
-    balance = rd -ld;
+///returns the depth of a node
+int AvlTree::Node::getDepth() {
+    if (left == nullptr) {
+        if (right == nullptr) {
+            return 1;
+        }
+        return right->getDepth() + 1;
+    } else {
+        if (right == nullptr) {
+            return left->getDepth() + 1;
+        } else {
+            int r = right->getDepth();
+            int l = left->getDepth();
+            if (r > l)return r + 1;
+            return l + 1;
+        }
+    }
 }
 
 /********************************************************************
@@ -551,8 +540,6 @@ void AvlTree::generatePic(const int n) {
 
 
 ///Debug methods
-
-
 bool AvlTree::checkBalances() {
     return root->checkBalances();
 
@@ -560,41 +547,25 @@ bool AvlTree::checkBalances() {
 
 bool AvlTree::Node::checkBalances() {
     checkBalance();
-    if(left != nullptr)left->checkBalances();
-    if(right != nullptr)right->checkBalances();
+    if (left != nullptr)left->checkBalances();
+    if (right != nullptr)right->checkBalances();
     return true;
 }
 
 bool AvlTree::Node::checkBalance() {
     int l;
     int r;
-    if(left != nullptr)l= left->getDepth();
+    if (left != nullptr)l = left->getDepth();
     else l = 0;
-    if(right != nullptr)r= right->getDepth();
+    if (right != nullptr)r = right->getDepth();
     else r = 0;
-    int expected = r - l ;
-    if(expected != balance ){
-        cout << "Balance of " << key << " at depth " << getDepth() << " is " << balance << " but should be " << expected << endl;
+    int expected = r - l;
+    if (expected != balance) {
+        cout << "Balance of " << key << " at depth " << getDepth() << " is " << balance << " but should be " << expected
+             << endl;
         return false;
     }
     return true;
 }
 
-int AvlTree::Node::getDepth() {
-    if(left == nullptr){
-        if(right == nullptr){
-            return 1;
-        }
-        return right->getDepth()+1;
-    }else {
-        if(right == nullptr){
-            return left->getDepth() +1;
-        }
-        else {
-            int r = right->getDepth();
-            int l = left->getDepth();
-            if(r > l)return r +1;
-            return l +1;
-        }
-    }
-}
+
